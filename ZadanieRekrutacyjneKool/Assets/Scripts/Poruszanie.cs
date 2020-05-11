@@ -68,7 +68,7 @@ public class Poruszanie : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && pistol == true && isAlive)
         {
-            //      Object.Instantiate(bullet,transform.position, transform.rotation);
+            
             GameObject o = GameObject.Instantiate(bullet, shootpoint.transform.position, bodytransform.rotation);
             o.SetActive(true);
         }
